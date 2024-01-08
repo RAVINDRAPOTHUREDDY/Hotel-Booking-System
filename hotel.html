@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+ 
+  <form id="bookingForm">
+    <img src="background">
+    <div>
+    <h1>HOTEL ELITE</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="checkIn">Check-in Date:</label>
+    <input type="date" id="checkIn" name="checkIn" required>
+    <br>
+
+    <label for="checkOut">Check-out Date:</label>
+    <input type="date" id="checkOut" name="checkOut" required>
+    <br>
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" name="roomType" required>
+      <br>
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="suite">Suite</option>
+    </select>
+    <br>
+    <button type="button" onclick="submitForm()">Book Now</button>
+    
+    </div>
+    <div id="confirmationMessage"></div>
+
+    <script src="hotel.js"></script>
+  </form>
+</body>
+</html>
